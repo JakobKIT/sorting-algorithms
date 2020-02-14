@@ -62,9 +62,9 @@ export default class SortingVisualizer extends React.Component {
             <>
                 <button onClick={() => this.resetNumbers()}>New Numbers</button>
                 <button onClick={() => this.mergeSort()}>Merge Sort</button>
-                <button onClick={() => this.quickSort()}>Quick Sort</button>
-                <button onClick={() => this.heapSort()}>Heap Sort</button>
-                <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
+                <button disabled onClick={() => this.quickSort()}>Quick Sort</button>
+                <button disabled onClick={() => this.heapSort()}>Heap Sort</button>
+                <button disabled onClick={() => this.bubbleSort()}>Bubble Sort</button>
                 <div className="numbers-container">
                     {numbers.map((value, index) => (
                          <div 
